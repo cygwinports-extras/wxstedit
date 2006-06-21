@@ -1,0 +1,370 @@
+wxstedit
+-------------------------------------------
+wxStEdit is a library and sample program for the wxWidgets's
+wxStyledTextCtrl wrapper around the Scintilla text editor widget. It
+provides a number of convenience functions and added capabilities,
+including the necessary prefs/styles/language management, menu creation
+and updating, a splitter, notebook, and frame component. Additionally it
+provides a find/replace, editor settings, and property dialogs.
+
+Runtime requirements:
+  cygwin-1.5.20-1
+  wx26-2.6.3-1
+  wx26-gtk2-2.6.3-1
+
+Build requirements:
+  cygwin-1.5.20-1
+  binutils-20050610-1
+  cygport-0.2.2-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  gcc-g++-3.4.4-1
+  make-3.80-1
+  sed-4.1.5-1
+
+Canonical homepage:
+  http://wxcode.sourceforge.net/showcomp.php?name=wxStEdit
+
+Canonical download:
+  http://prdownloads.sourceforge.net/wxcode/
+
+-------------------------------------------
+
+Build instructions:
+  unpack wxstedit-1.2.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./wxstedit-1.2.1-X.cygport all
+
+This will create:
+  /usr/src/wxstedit-1.2.1-X-src.tar.bz2
+  /usr/src/wxstedit-1.2.1-X.tar.bz2
+  /usr/src/wxstedit-devel-1.2.1-X.tar.bz2
+  /usr/src/wxstedit-doc-1.2.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/cygstedit-0.dll
+  /usr/bin/wxstedit.exe
+  /usr/share/doc/Cygwin/wxstedit-1.2.1.README
+  /usr/share/doc/wxstedit-1.2.1/readme.txt
+
+Files included in the devel package
+
+  /usr/include/wx-2.6/wx/stedit/pairarr.h
+  /usr/include/wx-2.6/wx/stedit/setup.h
+  /usr/include/wx-2.6/wx/stedit/setup0.h
+  /usr/include/wx-2.6/wx/stedit/stedefs.h
+  /usr/include/wx-2.6/wx/stedit/stedit.h
+  /usr/include/wx-2.6/wx/stedit/stedlgs.h
+  /usr/include/wx-2.6/wx/stedit/steexprt.h
+  /usr/include/wx-2.6/wx/stedit/stefindr.h
+  /usr/include/wx-2.6/wx/stedit/steframe.h
+  /usr/include/wx-2.6/wx/stedit/stelangs.h
+  /usr/include/wx-2.6/wx/stedit/stemenum.h
+  /usr/include/wx-2.6/wx/stedit/stenoteb.h
+  /usr/include/wx-2.6/wx/stedit/steopts.h
+  /usr/include/wx-2.6/wx/stedit/steprefs.h
+  /usr/include/wx-2.6/wx/stedit/steprint.h
+  /usr/include/wx-2.6/wx/stedit/steshell.h
+  /usr/include/wx-2.6/wx/stedit/stesplit.h
+  /usr/include/wx-2.6/wx/stedit/stestyls.h
+  /usr/include/wx-2.6/wx/stedit/wx24defs.h
+  /usr/lib/libstedit.dll.a
+
+Files included in the doc package:
+
+  /usr/share/doc/wxstedit-1.2.1/html/annotated.html
+  /usr/share/doc/wxstedit-1.2.1/html/classes.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTERecursionGuard-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTERecursionGuard.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTERecursionGuardFlag-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTERecursionGuardFlag.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditor-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditor.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditor.png
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorArtProvider-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorArtProvider.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorColumnizeDialog-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorColumnizeDialog.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorEvent-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorEvent.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorExportDialog-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorExportDialog.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorExporter-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorExporter.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorFindReplaceData-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorFindReplaceData.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorFindReplaceDialog-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorFindReplaceDialog.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorFindReplacePanel-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorFindReplacePanel.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorFrame-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorFrame.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorInsertTextDialog-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorInsertTextDialog.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorLangs-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorLangs.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorLangs.png
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorMenuManager-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorMenuManager.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorNotebook-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorNotebook.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorOptions-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorOptions.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefBase-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefBase.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefBase.png
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefBase__RefData-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefBase__RefData.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefDialog-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefDialog.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefDialogPageBase-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefDialogPageBase.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefDialogPageBase.png
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefDialogPageLangs-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefDialogPageLangs.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefDialogPageLangs.png
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefDialogPagePrefs-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefDialogPagePrefs.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefDialogPagePrefs.png
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefDialogPageStyles-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefDialogPageStyles.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefDialogPageStyles.png
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefPageData-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefPageData.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefPageData__RefData-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefPageData__RefData.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefs-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefs.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrefs.png
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrintOptionsDialog-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPrintOptionsDialog.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPropertiesDialog-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorPropertiesDialog.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorRefData-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorRefData.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorShell-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorShell.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorShell.png
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorSplitter-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorSplitter.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorStyle-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorStyle.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorStyles-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorStyles.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorStyles.png
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorWindowsDialog-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/classwxSTEditorWindowsDialog.html
+  /usr/share/doc/wxstedit-1.2.1/html/doxygen.css
+  /usr/share/doc/wxstedit-1.2.1/html/doxygen.png
+  /usr/share/doc/wxstedit-1.2.1/html/files.html
+  /usr/share/doc/wxstedit-1.2.1/html/ftv2blank.png
+  /usr/share/doc/wxstedit-1.2.1/html/ftv2doc.png
+  /usr/share/doc/wxstedit-1.2.1/html/ftv2folderclosed.png
+  /usr/share/doc/wxstedit-1.2.1/html/ftv2folderopen.png
+  /usr/share/doc/wxstedit-1.2.1/html/ftv2lastnode.png
+  /usr/share/doc/wxstedit-1.2.1/html/ftv2link.png
+  /usr/share/doc/wxstedit-1.2.1/html/ftv2mlastnode.png
+  /usr/share/doc/wxstedit-1.2.1/html/ftv2mnode.png
+  /usr/share/doc/wxstedit-1.2.1/html/ftv2node.png
+  /usr/share/doc/wxstedit-1.2.1/html/ftv2plastnode.png
+  /usr/share/doc/wxstedit-1.2.1/html/ftv2pnode.png
+  /usr/share/doc/wxstedit-1.2.1/html/ftv2vertline.png
+  /usr/share/doc/wxstedit-1.2.1/html/functions.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x62.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x63.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x64.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x65.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x66.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x67.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x68.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x69.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x6c.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x6d.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x6e.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x6f.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x70.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x71.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x72.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x73.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x74.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x75.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x77.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x78.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_0x7e.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_enum.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_eval.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x62.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x63.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x64.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x65.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x66.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x67.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x68.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x69.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x6c.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x6d.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x6e.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x6f.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x70.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x71.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x72.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x73.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x74.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x75.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x77.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x78.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_func_0x7e.html
+  /usr/share/doc/wxstedit-1.2.1/html/functions_vars.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x61.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x62.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x63.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x64.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x65.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x66.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x67.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x69.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x6c.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x6d.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x6e.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x70.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x72.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x73.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x74.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x75.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_0x77.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_defs.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_defs_0x61.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_defs_0x62.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_defs_0x63.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_defs_0x64.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_defs_0x65.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_defs_0x67.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_defs_0x69.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_defs_0x6d.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_defs_0x70.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_defs_0x72.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_defs_0x73.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_defs_0x75.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_defs_0x77.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_enum.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_eval.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_eval_0x6e.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_eval_0x70.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_eval_0x73.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_func.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_type.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_vars.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_vars_0x65.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_vars_0x69.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_vars_0x70.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_vars_0x73.html
+  /usr/share/doc/wxstedit-1.2.1/html/globals_vars_0x77.html
+  /usr/share/doc/wxstedit-1.2.1/html/hierarchy.html
+  /usr/share/doc/wxstedit-1.2.1/html/index.html
+  /usr/share/doc/wxstedit-1.2.1/html/main.html
+  /usr/share/doc/wxstedit-1.2.1/html/pairarr_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/pairarr_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/setup0_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/setup0_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/setup_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/setup_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/stedefs_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stedefs_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/stedit_8cpp-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stedit_8cpp.html
+  /usr/share/doc/wxstedit-1.2.1/html/stedit_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stedit_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/stedlgs_8cpp-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stedlgs_8cpp.html
+  /usr/share/doc/wxstedit-1.2.1/html/stedlgs_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stedlgs_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/stedlgs__wdr_8cpp-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stedlgs__wdr_8cpp.html
+  /usr/share/doc/wxstedit-1.2.1/html/stedlgs__wdr_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stedlgs__wdr_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/steexprt_8cpp-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/steexprt_8cpp.html
+  /usr/share/doc/wxstedit-1.2.1/html/steexprt_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/steexprt_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/stefindr_8cpp-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stefindr_8cpp.html
+  /usr/share/doc/wxstedit-1.2.1/html/stefindr_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stefindr_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/steframe_8cpp-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/steframe_8cpp.html
+  /usr/share/doc/wxstedit-1.2.1/html/steframe_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/steframe_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/stelangs_8cpp-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stelangs_8cpp.html
+  /usr/share/doc/wxstedit-1.2.1/html/stelangs_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stelangs_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/stemenum_8cpp-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stemenum_8cpp.html
+  /usr/share/doc/wxstedit-1.2.1/html/stemenum_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stemenum_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/stenoteb_8cpp-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stenoteb_8cpp.html
+  /usr/share/doc/wxstedit-1.2.1/html/stenoteb_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stenoteb_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/steopts_8cpp-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/steopts_8cpp.html
+  /usr/share/doc/wxstedit-1.2.1/html/steopts_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/steopts_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/steprefs_8cpp-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/steprefs_8cpp.html
+  /usr/share/doc/wxstedit-1.2.1/html/steprefs_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/steprefs_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/steprint_8cpp-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/steprint_8cpp.html
+  /usr/share/doc/wxstedit-1.2.1/html/steprint_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/steprint_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/steshell_8cpp-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/steshell_8cpp.html
+  /usr/share/doc/wxstedit-1.2.1/html/steshell_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/steshell_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/stesplit_8cpp-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stesplit_8cpp.html
+  /usr/share/doc/wxstedit-1.2.1/html/stesplit_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stesplit_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/stestyls_8cpp-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stestyls_8cpp.html
+  /usr/share/doc/wxstedit-1.2.1/html/stestyls_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/stestyls_8h.html
+  /usr/share/doc/wxstedit-1.2.1/html/structSTE__Language-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/structSTE__Language.html
+  /usr/share/doc/wxstedit-1.2.1/html/structSTE__LexerBlock-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/structSTE__LexerBlock.html
+  /usr/share/doc/wxstedit-1.2.1/html/structSTE__LexerComments-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/structSTE__LexerComments.html
+  /usr/share/doc/wxstedit-1.2.1/html/structSTE__LexerPreproc-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/structSTE__LexerPreproc.html
+  /usr/share/doc/wxstedit-1.2.1/html/structSTE__LexerStyles-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/structSTE__LexerStyles.html
+  /usr/share/doc/wxstedit-1.2.1/html/structSTE__LexerWords-members.html
+  /usr/share/doc/wxstedit-1.2.1/html/structSTE__LexerWords.html
+  /usr/share/doc/wxstedit-1.2.1/html/tab_b.gif
+  /usr/share/doc/wxstedit-1.2.1/html/tab_l.gif
+  /usr/share/doc/wxstedit-1.2.1/html/tab_r.gif
+  /usr/share/doc/wxstedit-1.2.1/html/tabs.css
+  /usr/share/doc/wxstedit-1.2.1/html/tree.html
+  /usr/share/doc/wxstedit-1.2.1/html/wx24defs_8h-source.html
+  /usr/share/doc/wxstedit-1.2.1/html/wx24defs_8h.html
+
+------------------
+
+Port Notes:
+
+----- version 1.2.1-1 -----
+Initial release for Cygwin.
+
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
