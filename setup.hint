@@ -1,6 +1,6 @@
-category: X11 Editors
-requires: cygwin wx26 wx26-gtk2
-sdesc: "wxWidgets text editor widget wrapper (runtime)"
+category: Editors Gnome
+requires: cygwin wx28-base wx28-gtk2 wx28-stedit
+sdesc: "wxWidgets text editor widget wrapper (editor)"
 ldesc: "wxStEdit is a library and sample program for the wxWidgets's
 wxStyledTextCtrl wrapper around the Scintilla text editor widget. It
 provides a number of convenience functions and added capabilities,

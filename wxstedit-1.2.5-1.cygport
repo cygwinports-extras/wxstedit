@@ -1,0 +1,35 @@
+WX_VERSION=2.8
+inherit wxwidgets
+
+DESCRIPTION="wxWidgets wxStyledTextCtrl editor widget"
+HOMEPAGE="http://wxcode.sourceforge.net/showcomp.php?name=wxStEdit"
+SRC_URI="mirror://sourceforge/wxcode/${P}.tar.gz"
+SRC_DIR=${PN}
+
+PKG_NAMES="${PN} wx${WX_VERSION/.}-stedit wx${WX_VERSION/.}-stedit-devel"
+PKG_HINTS='setup lib devel'
+PKG_CONTENTS[0]='usr/bin/*.exe usr/share/'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]='usr/include/ usr/lib/'
+
+src_compile() {
+	lndirs
+	CYGCONF_SOURCE=${B}
+
+	cd ${B}
+	cp -f include/wx/stedit/setup{0,}.h
+	cygconf --with-wx-config=${WX_CONFIG}
+	cygmake -j1 LDFLAGS_GUI=
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+	dobin samples/stedit/*.exe
+	mv ${D}/usr/lib/*.dll ${D}/usr/bin/
+
+	dodir /usr/include/wx-${WX_VERSION}
+	mv ${D}/usr/include/wx ${D}/usr/include/wx-${WX_VERSION}/
+}
+
+DOCS="docs/ChangeLog.txt docs/readme.txt"
