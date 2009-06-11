@@ -5,12 +5,12 @@ DESCRIPTION="wxWidgets wxStyledTextCtrl editor widget"
 HOMEPAGE="http://wxcode.sourceforge.net/showcomp.php?name=wxStEdit"
 SRC_URI="mirror://sourceforge/wxcode/${P}.tar.gz"
 SRC_DIR=${PN}
+PATCH_URI="1.2.5-setup.h.patch"
 
-PKG_NAMES="${PN} wx${WX_VERSION/.}-stedit wx${WX_VERSION/.}-stedit-devel"
-PKG_HINTS='setup lib devel'
-PKG_CONTENTS[0]='usr/bin/*.exe usr/share/'
-PKG_CONTENTS[1]='usr/bin/*.dll'
-PKG_CONTENTS[2]='usr/include/ usr/lib/'
+PKG_NAMES="${PN} libwx_stedit2.8_0 libwx_stedit2.8-devel"
+wxstedit_CONTENTS='usr/bin/*.exe usr/share/'
+libwx_stedit2_8_0_CONTENTS='usr/bin/*-2.8-0.dll'
+libwx_stedit2_8_devel_CONTENTS='usr/include/ usr/lib/'
 
 src_compile() {
 	lndirs
@@ -19,7 +19,7 @@ src_compile() {
 	cd ${B}
 	cp -f include/wx/stedit/setup{0,}.h
 	cygconf --with-wx-config=${WX_CONFIG}
-	cygmake -j1 LDFLAGS_GUI=
+	cygmake -j1 LDFLAGS_GUI="${LDFLAGS}"
 }
 
 src_install() {

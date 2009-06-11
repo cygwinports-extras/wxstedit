@@ -8,17 +8,19 @@ and updating, a splitter, notebook, and frame component. Additionally it
 provides a find/replace, editor settings, and property dialogs.
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  wx28-base-2.8.7-1
-  wx28-gtk2-2.8.7-1
+  cygwin-1.7.0-48
+  libgcc1-4.3.2-2
+  libstdc++6-4.3.2-2
+  libwx_baseu2.8_0-2.8.10.1-1
+  libwx_gtk2u2.8_0-2.8.10.1-1
 
 Build requirements:
-  binutils-20060817-1
-  cygport-0.3.10-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  make-3.81-1
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical homepage:
@@ -37,10 +39,10 @@ Build instructions:
   cygport ./wxstedit-1.2.5-X.cygport all
 
 This will create:
+  /usr/src/libwx_stedit2.8-devel-1.2.5-X.tar.bz2
+  /usr/src/libwx_stedit2.8_0-1.2.5-X.tar.bz2
   /usr/src/wxstedit-1.2.5-X-src.tar.bz2
   /usr/src/wxstedit-1.2.5-X.tar.bz2
-  /usr/src/wx28-stedit-1.2.5-X.tar.bz2
-  /usr/src/wx28-stedit-devel-1.2.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -48,13 +50,13 @@ Files included in the binary package:
 
 (wxstedit)
   /usr/bin/wxstedit.exe
-  /usr/share/doc/wxstedit-1.2.5/ChangeLog.txt
-  /usr/share/doc/wxstedit-1.2.5/readme.txt
+  /usr/share/doc/wxstedit/ChangeLog.txt
+  /usr/share/doc/wxstedit/readme.txt
 
-(wx28-stedit)
+(libwx_stedit2.8_0)
   /usr/bin/cygwxcode_gtk2_stedit-2.8-0.dll
 
-(wx28-stedit-devel)
+(libwx_stedit2.8-devel)
   /usr/include/wx-2.8/wx/stedit/pairarr.h
   /usr/include/wx-2.8/wx/stedit/setup.h
   /usr/include/wx-2.8/wx/stedit/stedefs.h
@@ -79,12 +81,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 1.2.5-1 -----
-Version bump.
-
------ version 1.2.1-1 -----
-Initial release for Cygwin.
-
+----- version 1.2.5-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

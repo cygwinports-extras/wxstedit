@@ -18,17 +18,3 @@
  	include/wx/stedit/stedefs.h \
  	include/wx/stedit/stedit.h \
  	include/wx/stedit/stedlgs.h \
---- origsrc/wxstedit/src/stenoteb.cpp	2007-06-19 16:23:26.000000000 -0500
-+++ src/wxstedit/src/stenoteb.cpp	2008-05-21 22:39:21.937500000 -0500
-@@ -757,7 +757,11 @@
-         wxFileDialog fileDialog( this, _("Open file(s) into new notebook page"),
-                                  GetOptions().GetDefaultFilePath(),
-                                  wxEmptyString, extensions,
-+#if wxCHECK_VERSION(2, 7, 0)
-                                  wxFD_OPEN | wxFD_MULTIPLE );
-+#else
-+                                 wxOPEN | wxMULTIPLE );
-+#endif
- 
-         if (fileDialog.ShowModal() == wxID_OK)
-             fileDialog.GetPaths(filePaths);

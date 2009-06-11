@@ -1,5 +1,5 @@
-category: Editors Gnome
-requires: cygwin wx28-base wx28-gtk2
+category: X11
+requires: cygwin libgcc1 libstdc++6 libwx_baseu2.8_0 libwx_gtk2u2.8_0
 external-source: wxstedit
 sdesc: "wxWidgets text editor widget wrapper (runtime)"
 ldesc: "wxStEdit is a library and sample program for the wxWidgets's
