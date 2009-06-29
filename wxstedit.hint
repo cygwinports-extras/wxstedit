@@ -1,5 +1,5 @@
 category: Editors
-requires: cygwin libgcc1 libstdc++6 libwx_base2.8_0 libwx_gtk2u2.8_0 libwx_stedit2.8_0
+requires: libgcc1 libstdc++6 libwx_base2.8_0 libwx_gtk2u2.8_0 libwx_stedit2.8_0
 sdesc: "wxWidgets text editor"
 ldesc: "wxStEdit is a library and sample program for the wxWidgets's
 wxStyledTextCtrl wrapper around the Scintilla text editor widget. It
