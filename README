@@ -8,18 +8,18 @@ and updating, a splitter, notebook, and frame component. Additionally it
 provides a find/replace, editor settings, and property dialogs.
 
 Runtime requirements:
-  cygwin-1.7.0-48
-  libgcc1-4.3.2-2
-  libstdc++6-4.3.2-2
-  libwx_baseu2.8_0-2.8.10.1-1
-  libwx_gtk2u2.8_0-2.8.10.1-1
+  cygwin-1.7.0-67
+  libgcc1-4.3.4-3
+  libstdc++6-4.3.4-3
+  libwx_baseu2.8_0-2.8.10.1-2
+  libwx_gtk2u2.8_0-2.8.10.1-2
 
 Build requirements:
-  binutils-20080624-2
-  cygport-0.9.6-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  gcc4-g++-4.3.2-2
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
+  gcc4-g++-4.3.4-3
   make-3.81-2
   sed-4.1.5-2
 
@@ -46,40 +46,10 @@ This will create:
 
 -------------------------------------------
 
-Files included in the binary package:
-
-(wxstedit)
-  /usr/bin/wxstedit.exe
-  /usr/share/doc/wxstedit/ChangeLog.txt
-  /usr/share/doc/wxstedit/readme.txt
-
-(libwx_stedit2.8_0)
-  /usr/bin/cygwxcode_gtk2_stedit-2.8-0.dll
-
-(libwx_stedit2.8-devel)
-  /usr/include/wx-2.8/wx/stedit/pairarr.h
-  /usr/include/wx-2.8/wx/stedit/setup.h
-  /usr/include/wx-2.8/wx/stedit/stedefs.h
-  /usr/include/wx-2.8/wx/stedit/stedit.h
-  /usr/include/wx-2.8/wx/stedit/stedlgs.h
-  /usr/include/wx-2.8/wx/stedit/steexprt.h
-  /usr/include/wx-2.8/wx/stedit/stefindr.h
-  /usr/include/wx-2.8/wx/stedit/steframe.h
-  /usr/include/wx-2.8/wx/stedit/stelangs.h
-  /usr/include/wx-2.8/wx/stedit/stemenum.h
-  /usr/include/wx-2.8/wx/stedit/stenoteb.h
-  /usr/include/wx-2.8/wx/stedit/steopts.h
-  /usr/include/wx-2.8/wx/stedit/steprefs.h
-  /usr/include/wx-2.8/wx/stedit/steprint.h
-  /usr/include/wx-2.8/wx/stedit/steshell.h
-  /usr/include/wx-2.8/wx/stedit/stesplit.h
-  /usr/include/wx-2.8/wx/stedit/stestyls.h
-  /usr/include/wx-2.8/wx/stedit/wx24defs.h
-  /usr/lib/libwxcode_gtk2_stedit-2.8.dll.a
-
-------------------
-
 Port Notes:
+
+----- version 1.2.5-11 -----
+Rebuilt.
 
 ----- version 1.2.5-10 -----
 Initial release for Cygwin 1.7.
